@@ -130,11 +130,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
        - sudo python -c 'import pty;pty.spawn("/bin/bash")'
          - Once the permissions were escalated, wp-config.php file was readable, file includes the SQL database login information in clear text.
          - With the login information for the database, it could be queried for flags 3 and 4
-         - <img width="484" alt="d1e94f3f0e2d3166cde189694606fcfc" src="https://user-images.githubusercontent.com/84750781/129419345-9f84133f-444c-4c40-ad3e-7041f00d1af6.png">
+         - 
 
 
   - `flag4.txt`: 715dea6c055b9fe3337544932f2941ce
    - **Exploit Used**
      - Same method as flag 3, in the same database
+     - 
         <img width="440" alt="9a862e73da430dcb2745b9eade93a2fc" src="https://user-images.githubusercontent.com/84750781/129416877-b61cd1a7-dd9f-4f14-b3bb-21bc034d520f.png">
         <img width="649" alt="4f72a923007f2fd0d757f294d04796c2" src="https://user-images.githubusercontent.com/84750781/129418740-abc60273-4cb6-4065-b8c0-54b8d21d457a.png">
+
