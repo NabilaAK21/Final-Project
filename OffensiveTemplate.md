@@ -115,14 +115,15 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - Used the web browser's console to view source code
       - Initially this flag was found with grep once logged in via SSH as any user
       - grep -ER flag /var/www/html/
+![24-flag_1b](https://user-images.githubusercontent.com/84750781/129418673-8f5ef41b-994c-4b53-add4-c99a892513bf.png)
 
-      - 
   - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a36e581c
     - **Exploit Used**
       - Weak SSH authentication
       - Once connected via SSH as any user, the flag could be found with a search
       - find / -type f -iname "flag?.txt" -exec cat {} \; 2>/dev/null
-  
+  ![24-flag_2](https://user-images.githubusercontent.com/84750781/129418841-4ed504be-e72e-4b6e-8880-e33ddd139934.png)
+
   - `flag3.txt`: afc01ab56b50591e7dccf93122770cd2
     - **Exploit Used**
       - Misconfiguration of steven user to run python with root permissions
@@ -134,3 +135,5 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    - **Exploit Used**
      - Same method as flag 3, in the same database
         <img width="440" alt="9a862e73da430dcb2745b9eade93a2fc" src="https://user-images.githubusercontent.com/84750781/129416877-b61cd1a7-dd9f-4f14-b3bb-21bc034d520f.png">
+        <img width="649" alt="4f72a923007f2fd0d757f294d04796c2" src="https://user-images.githubusercontent.com/84750781/129418740-abc60273-4cb6-4065-b8c0-54b8d21d457a.png">
+
